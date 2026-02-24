@@ -17,7 +17,7 @@ const loadMediasoup = async () => {
   const port = +config.webRtc.port;
 
   const workerConfig: mediasoup.types.WorkerSettings = {
-    logLevel: 'debug',
+    logLevel: 'warn',
     disableLiburing: true,
     workerBin: MEDIASOUP_BINARY_PATH
   };
